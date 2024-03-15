@@ -272,13 +272,10 @@ p {
   font-weight: bold;
 }
 
-.iframe
+.stream
 {
     width:100%;
-    z-index:100;
-    margin-top: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
+    z-index:100;    
+    margin-top: 100px;    
 }
