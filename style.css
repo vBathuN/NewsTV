@@ -191,7 +191,7 @@ p {
   top: 0;
   right: 0;
   width: 280px;
-  height: 42px;
+  height: 38px;
 }
 .ticker .stock-symbol {
   background: linear-gradient(#666, #000);
@@ -200,16 +200,16 @@ p {
   border: 2px solid #fff;
   float: left;
   width: 120px;
-  height: 38px;
+  height: 33px;
 }
 .ticker .stock-symbol p {
   font-weight: bold;
-  line-height: 1.8em;
+  line-height: 1.6em;
   transform: scale(0.8, 1.1);
 }
 .ticker span {
   float: right;
-  line-height: 2em;
+  line-height: 1.8em;
   margin-right: 60px;
   text-shadow: 0 2px 4px #000;
   transform: scale(1, 1.1);
@@ -274,8 +274,8 @@ p {
 
 .stream
 {
-    width:100vh;
+    width:100%;
     height: 100vh;
     z-index:100;    
-    margin-top: 0px;    
+    margin-top: 100px;    
 }
