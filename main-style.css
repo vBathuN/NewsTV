@@ -146,7 +146,7 @@ p {
   height: 5px;
   width: 98%;
 animation-name: blinker;
-  animation-duration: 0.3s;
+  animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -283,8 +283,22 @@ animation-name: blinker;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+
+animation:blink 2.5s linear infinite alternate 2.5s;
+
 }
 
+@keyframes blink {
+  80% {
+    color:white;
+  }
+  90% {
+    color:green;
+  }
+  100% {
+    color:white;
+  }
+}
 .stream
 {
     width:1280px;
