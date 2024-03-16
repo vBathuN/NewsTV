@@ -265,7 +265,7 @@ animation-name: blinker;
 .testimonials /* wrap */ {
   background: transparent;
   position: absolute;
-  top: -10px;
+  top: -8px;
   text-align:center;
   color:#ffffff;
 }
