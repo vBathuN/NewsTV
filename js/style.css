@@ -205,13 +205,13 @@ animation-name: blinker;
 }
 .ticker .stock-symbol p {
   font-weight: bold;
-  line-height: 1.6em;
+  line-height: 2em;
   transform: scale(0.8, 1.1);
 }
 .ticker span {
   float: left;
   width: 80px;
-  line-height: 1.8em;
+  line-height: 2.4em;
   margin-left: 0px;
   text-shadow: 0 2px 4px #000;
   transform: scale(1, 1.1);
