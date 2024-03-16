@@ -212,7 +212,7 @@ animation-name: blinker;
   float: left;
   width: 80px;
   line-height: 2.4em;
-  margin-left: 0px;
+  margin-left: 7px;
   text-shadow: 0 2px 4px #000;
   transform: scale(1, 1.1);
 }
