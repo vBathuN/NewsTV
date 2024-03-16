@@ -146,7 +146,7 @@ p {
   height: 5px;
   width: 98%;
 animation-name: blinker;
-  animation-duration: 1s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
