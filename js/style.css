@@ -169,7 +169,7 @@ animation-name: blinker;
 
 .ticker {
   background: #000;
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: bold;
   width: 100%;
   height: 38px;
@@ -180,7 +180,7 @@ animation-name: blinker;
 .ticker .ticker-txt {
   position: absolute;
   left: 0;
-  line-height: 2em;
+  line-height: 2.3em;
   letter-spacing: 1px;
   width: 4500px;
   animation: marquee 67.5s linear infinite;
@@ -265,12 +265,12 @@ animation-name: blinker;
 .testimonials /* wrap */ {
   background: transparent;
   position: absolute;
-  top: -13px;
+  top: -10px;
   text-align:center;
   color:#ffffff;
 }
 .testimonial blockquote { 
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.6;
   -webkit-line-clamp: 2;
