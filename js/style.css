@@ -339,7 +339,7 @@ animation-name: blinker;
   72%, 100% {transform:translate3d(calc(-100% - 40px), 0, 0)}
 }
 
-.stream
+.onair
 {
     width:1280px;
     height: 720px;    
