@@ -33,6 +33,9 @@ p {
 }
 
 .logo-area {
+  z-index: 1;
+  background: linear-gradient(90deg, #0a0, #0a0 0%, #800 100%, #0a0 100%, #0a0);
+  display: row;
   height: 90px;
   width: 15%;
 }
@@ -40,7 +43,7 @@ p {
 .box-top, .box-bttm {
   display: block;
   margin-left: auto;
-  margin-right: 30px;
+  margin-right: 0px;
   margin-top: 0px;
   perspective: 1200px;
   perspective-origin: 50% 100px;
@@ -107,7 +110,7 @@ p {
 }
 
 .cur-event {
-  background: linear-gradient(90deg, transparent, #800 2%);
+  background: linear-gradient(90deg, transparent, #800 0%);
   font-size: 20pt;
   font-weight: 600;
   overflow: hidden;
@@ -138,7 +141,7 @@ p {
   box-shadow: 0 0 2px #800 inset;
   bottom: 0;
   height: 5px;
-  width: 98%;
+  width: 96%;
 animation-name: blinker;
   animation-duration: 0.5s;
   animation-timing-function: linear;
@@ -177,14 +180,6 @@ animation-name: blinker;
   position: relative;
   white-space: nowrap;
 }
-.ticker .ticker-txt {
-  position: absolute;
-  left: 0;
-  line-height: 2.3em;
-  letter-spacing: 1px;
-  width: 1280px;
-  animation: marquee 67.5s linear infinite;
-}
 .ticker .stock-info {
   background: linear-gradient(90deg, #000, #000 25%, #0a0 95%, #000 95%, #000);
   box-shadow: -16px 0 20px #000;
@@ -217,14 +212,6 @@ animation-name: blinker;
   transform: scale(1, 1.1);
 }
 
-@keyframes marquee {
-  from {
-    left: 100%;
-  }
-  to {
-    left: -4500px;
-  }
-}
 @keyframes spin {
   0% {
     transform: rotateY(0deg);
@@ -242,57 +229,116 @@ animation-name: blinker;
     transform: rotateY(360deg);
   }
 }
-/* For other viewports */
-@media screen and (min-width: 768px) and (max-width: 980px) {
-  .logo-area {
-    width: 20%;
-  }
 
-  .cur-event {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .logo-area {
-    width: 25%;
-  }
-
-  .cur-event {
-    width: 75%;
-  }
-}
-
-.testimonials /* wrap */ {
-  background: transparent;
+.textrss /* wrap */ {
   position: absolute;
-  top: -8px;
-  text-align:center;
-  color:#ffffff;
-}
-.testimonial blockquote { 
-  font-size: 20px;
-  font-weight: bold;
+  z-index: 100;
+  width: 1280px;
+  height: 200px;
   line-height: 1.6;
-  -webkit-line-clamp: 2;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-
-animation:blink 2.5s linear infinite alternate 2.5s;
-
+  margin: -10px -200px;
+  
 }
 
-@keyframes blink {
-  80% {
-    color:white;
-  }
-  90% {
-    color:green;
-  }
-  100% {
-    color:white;
-  }
+.base{
+  background-color: #870407;
 }
+
+#titleContainer {
+  display: none;
+}
+
+#subTitleContainer {
+  display: none;
+}
+
+.color1{
+  background-color: #870407;
+}
+
+
+.primTxt{
+  color: white;
+  font-weight:800;
+  font-size:18px;
+  line-height:10px;
+  margin: 11.5px 0;
+}
+
+.secTxt{
+  color:white;
+  font-weight:600;
+  font-size:14px;
+  line-height:10px;
+  margin:13px 0;
+}
+
+#lowerThird{
+  display:flex;
+}
+
+.flexContainer{
+  display:flex;
+  flex-flow: row wrap;
+  width:auto;
+  margin: 500px 0px;
+}
+
+.container{
+  position:relative;
+  overflow:hidden;
+  display:inline-flex;
+}
+
+.lineBreak{
+  width:100%;
+}
+
+.box3{
+  height:100%;
+  width:100%;
+  transform:translate3D(-100%, 0, 0);
+  overflow:hidden;
+  animation-name:box3;
+  animation-delay:.75s;
+  animation-duration:20s;
+  animation-iteration-count:infinite;
+}
+
+.text{
+  padding:0px 10px;
+  max-width:1420px;
+  animation-name:text1;
+  animation-delay:1s;
+  animation-duration:20s;
+  animation-iteration-count:infinite;
+  transform:translate3d(calc(-100% - 40px), 0, 0);
+}
+
+@keyframes box3{
+  0% {
+    transform:translate3D(-100%, 0, 0);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  12%, 60% {
+    transform:translate3D(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  65%, 100% {transform:translate3D(-100%, 0, 0)}
+}
+
+@keyframes text1{
+  0% {
+    transform:translate3d(calc(-100% - 40px), 0, 0);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  6%, 70% {
+    transform:translate3d(0, 0, 0);
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  72%, 100% {transform:translate3d(calc(-100% - 40px), 0, 0)}
+}
+
 .stream
 {
     width:1280px;
