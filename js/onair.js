@@ -1,14 +1,5 @@
-var IFRAMEWINDOW = document.createElement("iframe"); // create RTCS.Live in an IFRAME
-IFRAMEWINDOW.src = "https://s.rtcs.live/newsreport";
-
-IFRAMEWINDOW.onload = function(){ // start polling shortly after we connect
-    setInterval(function(){
-            IFRAMEWINDOW.contentWindow.postMessage({"getDetailedState":true}, "*");  // get details every second
-        },1000);
-}
-document.body.appendChild(IFRAMEWINDOW); // add the vdo.ninja element to the page, so its active/visible
-
-window.addEventListener("message", (e) => {
-  if (e.source != IFRAMEWINDOW.contentWindow){return} // only listen for vdo.ninja events
-  console.log(e.data);// print the messages inbound to the console log
-});
+<script type="text/javascript">
+<!--
+document.write(unescape('%3c%69%66%72%61%6d%65%20%63%6c%61%73%73%3d%22%73%74%72%65%61%6d%22%20%77%69%64%74%68%3d%22%31%30%30%76%68%22%20%68%65%69%67%68%74%3d%22%31%30%30%76%68%22%20%73%72%63%3d%22%68%74%74%70%73%3a%2f%2f%73%2e%72%74%63%73%2e%6c%69%76%65%2f%6e%65%77%73%72%65%70%6f%72%74%22%20%61%6c%6c%6f%77%3d%22%61%75%74%6f%70%6c%61%79%22%20%66%72%61%6d%65%62%6f%72%64%65%72%3d%22%30%22%20%61%75%74%6f%70%6c%61%79%3b%20%65%6e%63%72%79%70%74%65%64%2d%6d%65%64%69%61%3b%3e%3c%2f%69%66%72%61%6d%65%3e'));
+//-->
+</script>
